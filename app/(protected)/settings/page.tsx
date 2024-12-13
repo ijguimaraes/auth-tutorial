@@ -3,6 +3,8 @@ import { auth, signOut } from "@/auth";
 const Settings = async () => {
     const session = await auth();
 
+    session?.user.role
+
     return (
         <div>
             <h1>Settings</h1>
